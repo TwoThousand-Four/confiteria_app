@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-padding">
+    <ion-title>Hola {{user.name}}</ion-title>
+    <ion-avatar slot="end">
+      <img src="https://cdn.discordapp.com/attachments/982115426660151296/1143353727273676860/087e280f5af818a4ceb52286ce2ce837c5_720x720.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item [routerLink]="['/home']">
+      Home
+      <ion-icon slot="start" name="home"></ion-icon>
+    </ion-item>
+    <ion-item [routerLink]="['/login']">
+      Login
+      <ion-icon slot="start" name="person"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

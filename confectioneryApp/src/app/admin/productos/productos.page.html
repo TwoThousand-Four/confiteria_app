@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item [routerLink]="['/home']">
+      Home
+      <ion-icon slot="start" name="home"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list class="ion-padding">
+    <ion-label>Lista de productos</ion-label>
+    <ion-item *ngFor="let p of productos">
+      {{p.id}}#
+      {{p.nombre}}
+      <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
